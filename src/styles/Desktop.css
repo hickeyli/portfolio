@@ -130,6 +130,13 @@
     padding: 10px;
     background: rgba(40, 40, 40, 0.9);
     border-radius: 10px 10px 0 0;
+    cursor: grab;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .window-header:active {
+    cursor: grabbing;
   }
   
   .window-title {
@@ -141,6 +148,7 @@
   .window-controls {
     display: flex;
     gap: 5px;
+    cursor: default;
   }
   
   .window-control {
@@ -160,4 +168,59 @@
   
   .window-maximize {
     background: #27c93f;
+  }
+
+  .finder-window {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    transform: none;
+    user-select: none;
+  }
+
+  .window-content {
+    padding: 20px;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+  }
+
+  .project-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .project-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-item:active {
+    transform: translateY(0);
+  }
+
+  .project-icon {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .project-details {
+    color: white;
+  }
+
+  .project-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+  }
+
+  .project-details p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
   }

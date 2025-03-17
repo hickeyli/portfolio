@@ -37,9 +37,9 @@ const LoginHero = ({ onLogin }) => {
             ) : (
               <div className="login-form">
                 <div className="avatar">
-                  <img src="/your-avatar.jpg" alt="Profile" />
+                  <img src="/67791385_2422213661169334_770790022239485952_n.jpg" alt="Profile" />
                 </div>
-                <div className="username">Your Name</div>
+                <div className="username">Liam Hickey</div>
                 <button className="login-button" onClick={onLogin}>Enter Portfolio</button>
                 <div className="login-footer">
                   Full Stack Developer
